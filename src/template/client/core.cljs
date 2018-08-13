@@ -12,7 +12,6 @@
 
 (defonce app-state (atom {:text ""}))
 
-
 (rum/defc hello-world < rum/reactive []
   [:div
    [:h1 (:text (rum/react app-state))] ;; TODO: use a cursor

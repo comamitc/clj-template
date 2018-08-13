@@ -19,7 +19,7 @@
   ;; NOTE: this will deliver your index.html
   (GET "/" [] (-> (response/resource-response "index.html" {:root "public"})
                   (response/content-type "text/html")))
-  (GET "/hello" [] "Hello World!")
+  (GET "/hello" [] "Hello Server!")
   (route/not-found "Not Found"))
 
 ;; NOTE: wrap reload isn't needed when the clj sources are watched by figwheel

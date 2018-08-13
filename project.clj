@@ -3,15 +3,11 @@
                  [org.clojure/clojurescript "1.10.238"]
                  [org.clojure/core.async  "0.4.474"]
                  [rum "0.11.2"]
-                 [binaryage/devtools "0.6.1"]
                  [ring "1.7.0-RC1"]
                  [ring-transit "0.1.6"]
                  [ring/ring-defaults "0.2.1"]
-                 [com.ninjudd/ring-async "0.2.0"]
                  [secretary "1.2.3"]
                  [com.cognitect/transit-cljs "0.8.256"]
-                 [environ "1.0.3"]
-                 [org.clojure/data.json "0.2.6"]
                  [org.clojure/tools.logging "0.3.1"]
                  [org.slf4j/slf4j-log4j12 "1.7.1"]
                  [cljs-http "0.1.45"]]
@@ -53,7 +49,7 @@
                     :closure-defines {goog.DEBUG false}
                     :pretty-print    false}}]}
 
-  :figwheel {:init     user/start-server
+  :figwheel {:init    user/start-server
              :destroy user/stop-server}
 
   :ring {:handler template.server.handler/dev-app}

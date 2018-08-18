@@ -10,7 +10,8 @@
                  [com.cognitect/transit-cljs "0.8.256"]
                  [org.clojure/tools.logging "0.3.1"]
                  [org.slf4j/slf4j-log4j12 "1.7.1"]
-                 [cljs-http "0.1.45"]]
+                 [cljs-http "0.1.45"]
+                 [org.roman01la/cljss "1.6.3"]]
 
   :plugins [[lein-npm "0.6.2"]
             [lein-figwheel "0.5.16"]

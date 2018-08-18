@@ -17,6 +17,7 @@
   (sec/defroute "/about" []
     (app-state! [:page] core/About))
 
+  ; setup history API
   (let [history (History.)
         navigation EventType/NAVIGATE]
     (goog.events/listen history

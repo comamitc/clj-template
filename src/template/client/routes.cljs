@@ -8,7 +8,7 @@
             [template.client.components.core :as core])
   (:import goog.History))
 
-(defn init []
+(defn init! []
   (sec/set-config! :prefix "#")
 
   (sec/defroute "/" []

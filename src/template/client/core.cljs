@@ -11,17 +11,16 @@
 
 (enable-console-print!)
 
-(routes/init)
+(routes/init!)
 
+(defn- render-app! []
 
-
-(defn- render-app []
-  (css/remove-styles!)
   (rum/mount (App)
              (by-id "app")))
 
-;; for figwheel
+;; figwheel hook
 (defn on-js-reload []
-  (render-app))
+  (css/remove-styles!) ;; for cljss
+  (render-app!))
 
-(render-app)
+(render-app!)

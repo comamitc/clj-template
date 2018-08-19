@@ -14,7 +14,6 @@
 (routes/init!)
 
 (defn- render-app! []
-
   (rum/mount (App)
              (by-id "app")))
 

@@ -10,3 +10,4 @@ out
 .nrepl-port
 log
 .rebel_readline_history
+clj-s
